@@ -1,5 +1,5 @@
 function greetFriend(name) {
-  // Insert code here;
+  // Dan wrote this;
 }
 
 // Do not edit this line;
