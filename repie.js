@@ -1,4 +1,4 @@
-function generatePieGraph(t, e) {! function() { var t = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+/*function generatePieGraph(t, e) {! function() { var t = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
         window.requestAnimationFrame = t }(); var o, i, n = e.hasOwnProperty("pie") ? e.pie : "normal",
         r = e.values,
         a = e.colors,
@@ -56,4 +56,4 @@ function generatePieGraph(t, e) {! function() { var t = window.requestAnimationF
                     b.fillStyle = h, b.font = "bold 16px Arial", b.textAlign = "center", b.fillText(y.toFixed(1) + "%", g, k), R += i }
             if (1 == f && "horizontal" == P) { for (var w = '<div class="pie-horizontal-list"><ul>', c = 0; c < r.length; c++) w += '<li><span style="background: ' + a[c] + '"></span> ' + r[c] * (100 / H) + " %<li>";
                 w += "</ul></div>", x.insertAdjacentHTML("afterend", w) } if (1 == f && "vertical" == P) { for (var w = '<div class="pie-vertical-list-' + t + '"><ul>', c = 0; c < r.length; c++) w += '<li><span style="background: ' + a[c] + '"></span> ' + r[c] * (100 / H) + " %<li>";
-                w += "</ul></div>", x.parentElement.insertAdjacentHTML("beforeend", w) } } }() }
+                w += "</ul></div>", x.parentElement.insertAdjacentHTML("beforeend", w) } } }() }/*
