@@ -6,7 +6,23 @@
     box-sizing: border-box;
 }
 
-.clearfix::after {
+
+/* html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+}
+ */
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url(https://bit.ly/38EhJYw) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+s .clearfix::after {
     content: "";
     display: table;
     clear: both;
@@ -38,7 +54,8 @@ body {
 
 .top {
     height: 40vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("https://images.unsplash.com/photo-1579267130459-500e662b083a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+    /* changes height of entire budget calulcator section*/
+    background-image: transparent;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -47,11 +64,13 @@ body {
 .budget {
     position: absolute;
     width: 350px;
+    /* changes length of red/green bars*/
     top: 50%;
+    /* shifts budget box up/down */
     left: 50%;
+    /* moves container budget left by certain percentage*/
     transform: translate(-50%, -50%);
-    color: rgb(192, 188, 188);
-    /* background-color: coral; */
+    color: #998477;
 }
 
 .budget__title {
@@ -71,44 +90,53 @@ body {
 
 .budget__income,
 .budget__expenses {
-    padding: 12px;
+    padding: 20px;
+    /* changes thickness of red/green bars*/
     text-transform: uppercase;
 }
 
 .budget__income {
     margin-bottom: 10px;
-    background-color: #2c65cf;
+    /* changes space in between red/green bars*/
+    background-color: lightseagreen;
 }
 
 .budget__expenses {
-    background-color: #f7261f;
+    background-color: lightcoral;
 }
 
 .budget__income--text,
 .budget__expenses--text {
     float: left;
-    font-size: 13px;
-    color: #444;
-    margin-top: 2px;
+    font-size: 18px;
+    color: grey;
+    margin-top: -12px;
+    /* moves text up/down */
 }
 
 .budget__income--value,
 .budget__expenses--value {
     letter-spacing: 1px;
     float: left;
+    font-size: 18px;
+    margin-top: -12px;
+    /* moves text up/down */
 }
 
 .budget__income--percentage,
 .budget__expenses--percentage {
     float: left;
-    width: 34px;
-    font-size: 11px;
+    width: 50px;
+    font-size: 18px;
     padding: 3px 0;
     margin-left: 10px;
+    margin-top: -15px;
+    /* moves text up/down */
 }
 
 .budget__expenses--percentage {
     background-color: rgba(255, 255, 255, 0.2);
+    /* outlines expenses percentage */
     text-align: center;
     border-radius: 3px;
 }
@@ -131,7 +159,7 @@ body {
 }
 
 .add__type {
-    width: 100px;
+    width: 55px;
     border: 1px solid #e7e7e7;
     height: 44px;
     font-size: 18px;
@@ -330,4 +358,152 @@ h2 {
 .clear-button:hover {
     background-color: #888888;
     color: white;
+}
+
+
+/* Navbar*/
+
+.content {
+    width: 94%;
+    margin: 4em auto;
+    font-size: 64px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.logo {
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 16px 46px;
+    color: #99777f;
+    font-weight: bold;
+    font-size: 64px;
+    letter-spacing: 2px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+}
+
+nav ul {
+    line-height: 60px;
+    list-style: none;
+    background: transparent;
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+}
+
+nav.black ul {
+    background: transparent;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 40px;
+}
+
+
+/* right hand size text */
+
+nav ul li a {
+    text-decoration: none;
+    color: #778899;
+    font-size: 24px;
+    font-family: questrial;
+}
+
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    background: transparent;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+@media(max-width: 786px) {
+    .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+    }
+    nav ul {
+        max-height: 0px;
+        background: transparent;
+    }
+    nav.black ul {
+        background: transparent;
+    }
+    .showing {
+        max-height: 34em;
+    }
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+    }
+    .menu-icon {
+        display: block;
+    }
+}
+
+
+/* Pie Chart */
+
+.chartContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.center {
+    width: 800px;
+}
+
+
+/* Footer */
+
+hr {
+    border: 1px solid #778899;
+}
+
+ul.no_bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: lightslategray;
+}
+
+li.left {
+    float: left;
+}
+
+li.right {
+    float: right;
+}
+
+
+/* testing: centering different layers of text */
+
+
+/* li.center{
+    float: center;
+} */
+
+.footer-message {
+    position: relative;
+    width: 100%;
+    padding: 5px;
+    bottom: 0px;
 }
