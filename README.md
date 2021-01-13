@@ -4,7 +4,7 @@ Team 4:
 Cesar, Espinoza
 Daniel, Walker
 Jayzy, Padilla
-Otabek 
+Otabek (bk-42)
 Shirley, Ni
  Viktoriia, Takshaitova
 Jimmy Jimenez
