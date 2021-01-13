@@ -14,7 +14,7 @@
 
 body {
     color: rgb(100, 140, 250);
-    font-family: Open Sans;
+    font-family: 'El Messiri', sans-serif;
     font-size: 16px;
     position: relative;
     height: 100vh;
@@ -147,7 +147,7 @@ body {
     border: 1px solid #e7e7e7;
     background-color: #fff;
     color: inherit;
-    font-family: inherit;
+    font-family: 'El Messiri', sans-serif;
     font-size: 14px;
     padding: 12px 15px;
     margin-right: 10px;
@@ -325,6 +325,7 @@ h2 {
     background-color: white;
     padding: 12px;
     transition-duration: 0.4s;
+    margin-left: 15px;
 }
 
 .clear-button:hover {

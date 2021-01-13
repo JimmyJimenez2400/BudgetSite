@@ -6,5 +6,5 @@ Daniel, Walker
 Jayzy, Padilla
 Otabek (bk-42)
 Shirley, Ni
- Viktoriia, Takshaitova
+Viktoriia, Takshaitova
 Jimmy Jimenez
