@@ -2,100 +2,176 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- original code links -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+<!-- NavBar links -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
-    <link type="text/css" rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Budget App</title>
+  <link type="text/css" rel="stylesheet" href="style.css" />
+
+  <!-- Pie Chart js file -->
+  <!-- Need this file so that chart is generated -->
+
+  <script type="application/javascript" src="rpie.js"></script>
+ 
+
+  
+
+  <title>Budget App</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-          
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Advanced Budget</a> <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-          </ul>
+    <!-- NavBar： https://bootsnipp.com/snippets/kl8Q3 -->
+    <!-- More NavBar Styles: https://www.mockplus.com/blog/post/bootstrap-navbar-template -->
+    <div class="wrapper">
+        <header>
+           <nav>
+              <div class="menu-icon">
+                 <i class="fa fa-bars fa-2x"></i>
+              </div>
+              <div class="logo">
+                 Budget Me!
+              </div>
+              <div class="menu">
+                 <ul>
+                     <li><a href="alt_form.html">Advanced Budgeting</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                 </ul>
+              </div>
+           </nav>
+        </header>
+
+
+  <div class="top">
+    <div class="budget">
+      <div class="budget__title">
+        Available Budget in <span class="budget__title--month">%Month%</span>:
+      </div>
+
+      <div class="budget__value">+ 2,345.64</div>
+
+      <div class="budget__income clearfix">
+        <div class="budget__income--text">Income</div>
+        <div class="right">
+          <div class="budget__income--value">+ 4,300.00</div>
+          <div class="budget__income--percentage">&nbsp;</div>
         </div>
-      </nav>
+      </div>
 
-    <div class="top">
-        <div class="budget">
-            <div class="budget__title">
-                Available Budget in <span class="budget__title--month">%Month%</span>:
-            </div>
-
-            <div class="budget__value">+ 2,345.64</div>
-
-            <div class="budget__income clearfix">
-                <div class="budget__income--text">Income</div>
-                <div class="right">
-                    <div class="budget__income--value">+ 4,300.00</div>
-                    <div class="budget__income--percentage">&nbsp;</div>
-                </div>
-            </div>
-
-            <div class="budget__expenses clearfix">
-                <div class="budget__expenses--text">Expenses</div>
-                <div class="right clearfix">
-                    <div class="budget__expenses--value">- 1,954.36</div>
-                    <div class="budget__expenses--percentage">45%</div>
-                </div>
-            </div>
+      <div class="budget__expenses clearfix">
+        <div class="budget__expenses--text">Expenses</div>
+        <div class="right clearfix">
+          <div class="budget__expenses--value">- 1,954.36</div>
+          <div class="budget__expenses--percentage">45%</div>
         </div>
+      </div>
     </div>
+  </div>
 
-    <div class="bottom">
-        <div class="add">
-            <div class="add__container">
-                <select class="add__type">
-          <option value="inc" selected>Income</option>
-          <option value="exp">Outcome</option>
+  <div class="bottom">
+    <div class="add">
+      <div class="add__container">
+        <select class="add__type">
+          <option value="inc" selected>+</option>
+          <option value="exp">-</option>
         </select>
-                <input type="text" class="add__description" placeholder="Add description" />
-                <input type="number" step="50" class="add__value" placeholder="Value" />
-                <button class="add__btn">
+        <input type="text" class="add__description" placeholder="Add description" />
+        <input type="number" step="50" class="add__value" placeholder="Value" />
+        <button class="add__btn">
           <i class="ion-ios-checkmark-outline"></i>
         </button>
-            </div>
-        </div>
-
-        <div class="container clearfix">
-            <div class="income">
-                <h2 class="icome__title">Income</h2>
-
-                <div class="income__list">
-
-                </div>
-            </div>
-
-            <div class="expenses">
-                <h2 class="expenses__title">Expenses</h2>
-
-                <div class="expenses__list">
-
-                </div>
-            </div>
-        </div>
-
-
-        <center><button onclick="clearEverything()" class="clear-button">Clear all</button></center>
+      </div>
     </div>
 
-    <script src="assets/app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <div class="container clearfix">
+      <div class="income">
+        <h2 class="icome__title">Income</h2>
+
+        <div class="income__list">
+          
+        </div>
+      </div>
+
+      <div class="expenses">
+        <h2 class="expenses__title">Expenses</h2>
+
+        <div class="expenses__list">
+         
+        </div>
+      </div>
+    </div>
+
+    
+    <center><button onclick="clearEverything()" class="clear-button">Clear all</button></center>
+  </div>
+
+  <br></br><br></br><br></br> <!-- White Space -->
+  
+  <!-- Donut Chart -->
+  <!-- https://www.cssscript.com/pie-donut-ring-chart-rpie/ -->
+  <!-- https://www.cssscript.com/demo/pie-donut-ring-chart-rpie/ -->
+
+  <div class = "chartContainer">
+  <div class="false-For-Bottom-Text">
+    <div class="mypiechart">	
+        <canvas id="myCanvas" width="300" height="300"></canvas>
+    </div>
+    <hr>
+    Pie Chart with Doughnuts shape (50%)
+</div>
+</div>
+
+  <script type="text/javascript">
+		
+    var obj = {
+                   values: [15, 50, 20, 85, 30],
+                   colors: ['#4CAF50', '#00BCD4', '#E91E63', '#FFC107', '#9E9E9E'],
+                   animation: true, // Takes boolean value & default behavious is false
+                   animationSpeed: 50, // Time in miliisecond & default animation speed is 20ms
+                   fillTextData: true, // Takes boolean value & text is not generate by default 
+                   fillTextColor: '#fff', // For Text colour & default colour is #fff (White)
+                   fillTextAlign: 1.30, // for alignment of inner text position i.e. higher values gives closer view to center & default text alignment is 1.85 i.e closer to center
+                   fillTextPosition: 'inner', // 'horizontal' or 'vertical' or 'inner' & default text position is 'horizontal' position i.e. outside the canvas
+                   doughnutHoleSize: 60, // Percentage of doughnut size within the canvas & default doughnut size is null
+                   doughnutHoleColor: '#fff', // For doughnut colour & default colour is #fff (White)
+                   offset: 1, // Offeset between two segments & default value is null
+                   pie: 'normal', // if the pie graph is single stroke then we will add the object key as "stroke" & default is normal as simple as pie graph
+                   isStrokePie: { 
+                       stroke: 20, // Define the stroke of pie graph. It takes number value & default value is 20
+                       overlayStroke: true, // Define the background stroke within pie graph. It takes boolean value & default value is false
+                       overlayStrokeColor: '#eee', // Define the background stroke colour within pie graph & default value is #eee (Grey)
+                       strokeStartEndPoints: 'Yes', // Define the start and end point of pie graph & default value is No
+                       strokeAnimation: true, // Used for animation. It takes boolean value & default value is true
+                       strokeAnimationSpeed: 40, // Used for animation speed in miliisecond. It takes number & default value is 20ms
+                       fontSize: '60px', // Used to define text font size & default value is 60px
+                       textAlignement: 'center', // Used for position of text within the pie graph & default value is 'center'
+                       fontFamily: 'Arial', // Define the text font family & the default value is 'Arial'
+                       fontWeight: 'bold' //  Define the font weight of the text & the default value is 'bold'
+                   }
+                 };
+    	//Generate myCanvas		
+        generatePieGraph('myCanvas', obj); 
+    </script>
+
+<br></br><br></br><br></br> <!-- White Space -->
+
+<!-- Footer -->
+<div class = "Footer">
+    <ul class = "no_bullets">
+        <center><li class = "center">Check out our Github Page!</li></center>
+        <hr>
+        <li class = "left">Created by JJAY TTP Team 4</li>
+        <li class = "right">Copyright 2021</li>
+    </ul>
+</div>
+
+  <script src="app.js"></script> <!-- has to stay at bottom in order for add description and value to work -->
 </body>
 
 </html>
