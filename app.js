@@ -520,3 +520,11 @@ function clearEverything() {
     if (confirm("This will clear all the data on this page permanently\n Are you sure?"))
         budgetController.clearLocalData();
 }
+
+$(window).on("scroll", function() {
+    if ($(window).scrollTop()) {
+        $('nav').addClass('black');
+    } else {
+        $('nav').removeClass('black');
+    }
+})
