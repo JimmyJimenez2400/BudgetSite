@@ -322,11 +322,15 @@ h2 {
     text-transform: uppercase;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: 0;
-    background-color: white;
+    background-color:#f7f7f7;
     padding: 12px;
     transition-duration: 0.4s;
-    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    cursor:pointer;
+    display: inline-block;
 }
+
 
 .clear-button:hover {
     background-color: #888888;
