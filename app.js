@@ -263,11 +263,11 @@ var UIController = (function () {
             if (type === "inc") {
                 element = DOMstrings.incomeContainer;
 
-                html = '<div class="item clearfix" id="inc-%id%"><div class="item__description">%description%</div><div class="right clearfix"><div class="item__value">%value%</div><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button></div></div></div>';
+                html = '<div class="item clearfix" id="inc-%id%"><div class="item__description">%description%</div><div class="right clearfix"><div class="item__value">%value%</div><div class="item__delete"><button class="item__delete--btn"><img src="https://image.pngaaa.com/379/431379-middle.png" width="30" height="30"></button></div></div></div>';
             } else if (type === "exp") {
                 element = DOMstrings.expenseContainer;
 
-                html = '<div class="item clearfix" id="exp-%id%"><div class="item__description">%description%</div><div class="right clearfix"><div class="item__value">%value%</div><div class="item__percentage">21%</div><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button></div></div></div>'
+                html = '<div class="item clearfix" id="exp-%id%"><div class="item__description">%description%</div><div class="right clearfix"><div class="item__value">%value%</div><div class="item__percentage">21%</div><div class="item__delete"><button class="item__delete--btn"><img src="https://image.pngaaa.com/379/431379-middle.png" width="30" height="30"></img></button></div></div></div>'
             }
 
             // Replace the placeholder string with some actual data
@@ -522,11 +522,9 @@ function clearEverything(){
 }
 
 $(window).on("scroll", function() {
-    if($(window).scrollTop()) {
-          $('nav').addClass('black');
-    }
-
-    else {
-          $('nav').removeClass('black');
+    if ($(window).scrollTop()) {
+        $('nav').addClass('black');
+    } else {
+        $('nav').removeClass('black');
     }
 })

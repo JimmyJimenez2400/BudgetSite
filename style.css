@@ -19,7 +19,7 @@
 header {
     width: 100%;
     height: 100vh;
-    background: url(https://bit.ly/38EhJYw) no-repeat 50% 50%;
+    background: url(https://images.unsplash.com/photo-1524673450801-b5aa9b621b76?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80) no-repeat 50% 50%;
     background-size: cover;
 }s
 
@@ -59,16 +59,22 @@ body {
     background-image: transparent;
     background-size: cover;
     background-position: center;
+    /*This is for the section for Available budget*/
+    background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+    background-color: rgba(95, 71, 181, 0.187);
     position: relative;
 }
 
 .budget {
     position: absolute;
-    width: 350px; /* changes length of red/green bars*/
-    top: 50%; /* shifts budget box up/down */
-    left: 50%; /* moves container budget left by certain percentage*/
+    width: 350px;
+    /* changes length of red/green bars*/
+    top: 50%;
+    /* shifts budget box up/down */
+    left: 50%;
+    /* moves container budget left by certain percentage*/
     transform: translate(-50%, -50%);
-    color: #998477;
+    color: #ffffff;
 }
 
 .budget__title {
@@ -88,25 +94,28 @@ body {
 
 .budget__income,
 .budget__expenses {
-    padding: 20px; /* changes thickness of red/green bars*/
+    padding: 20px;
+    /* changes thickness of red/green bars*/
     text-transform: uppercase;
 }
 
 .budget__income {
-    margin-bottom: 10px; /* changes space in between red/green bars*/
-    background-color:lightseagreen;
+    margin-bottom: 10px;
+    /* changes space in between red/green bars*/
+    background-image: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
 }
 
 .budget__expenses {
-    background-color: lightcoral;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
 }
 
 .budget__income--text,
 .budget__expenses--text {
     float: left;
     font-size: 18px;
-    color: grey;
-    margin-top: -12px; /* moves text up/down */
+    color: rgb(255, 255, 255);
+    margin-top: -12px;
+    /* moves text up/down */
 }
 
 .budget__income--value,
@@ -114,7 +123,8 @@ body {
     letter-spacing: 1px;
     float: left;
     font-size: 18px;
-    margin-top: -12px; /* moves text up/down */
+    margin-top: -12px;
+    /* moves text up/down */
 }
 
 .budget__income--percentage,
@@ -124,11 +134,13 @@ body {
     font-size: 18px;
     padding: 3px 0;
     margin-left: 10px;
-    margin-top: -15px; /* moves text up/down */
+    margin-top: -15px;
+    /* moves text up/down */
 }
 
 .budget__expenses--percentage {
-    background-color: rgba(255, 255, 255, 0.2); /* outlines expenses percentage */
+    background-color: rgba(255, 255, 255, 0.2);
+    /* outlines expenses percentage */
     text-align: center;
     border-radius: 3px;
 }
@@ -348,7 +360,7 @@ h2 {
 }
 
 .clear-button:hover {
-    background-color: #888888;
+    background-color: red;
     color: white;
 }
 
@@ -371,14 +383,12 @@ h2 {
     font-weight: bold;
     font-size: 64px;
     letter-spacing: 2px;
-   
 }
 
 nav {
     position: fixed;
     width: 100%;
     line-height: 60px;
-    
 }
 
 nav ul {
@@ -392,8 +402,6 @@ nav ul {
     margin: 0;
     padding-right: 40px;
     transition: 1s;
-   
-    
 }
 
 nav.black ul {
@@ -403,17 +411,17 @@ nav.black ul {
 nav ul li {
     display: inline-block;
     padding: 16px 40px;
-    
 }
 
+
 /* right hand size text */
+
 nav ul li a {
     text-decoration: none;
     color: #778899;
     font-size: 24px;
     font-family: questrial;
 }
-
 
 .menu-icon {
     line-height: 60px;
@@ -428,78 +436,77 @@ nav ul li a {
 }
 
 @media(max-width: 786px) {
-
     .logo {
-          position: fixed;
-          top: 0;
-          margin-top: 16px;
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
     }
-
     nav ul {
-          max-height: 0px;
-          background: transparent;
+        max-height: 0px;
+        background: transparent;
     }
-
     nav.black ul {
-          background: transparent;
+        background: transparent;
     }
-
     .showing {
-          max-height: 34em;
+        max-height: 34em;
     }
-
     nav ul li {
-          box-sizing: border-box;
-          width: 100%;
-          padding: 24px;
-          text-align: center;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
     }
-
     .menu-icon {
-          display: block;
+        display: block;
     }
-
 }
 
+
 /* Pie Chart */
+
 .chartContainer {
     display: flex;
     justify-content: center;
-  }
-  .center {
+}
+
+.center {
     width: 800px;
-  }
+}
+
 
 /* Footer */
 
-hr{
+hr {
     border: 1px solid #778899;
 }
 
-ul.no_bullets{
+ul.no_bullets {
     list-style-type: none;
     margin: 0;
     padding: 0;
     color: lightslategray;
 }
 
-li.left{
+li.left {
     float: left;
 }
 
-li.right{
+li.right {
     float: right;
 }
 
+
 /* testing: centering different layers of text */
+
+
 /* li.center{
     float: center;
 } */
 
-.footer-message{
-    position:relative;
+.footer-message {
+    position: relative;
     width: 100%;
-    padding:5px;
-    bottom:0px;
-  }
-
+    padding: 5px;
+    bottom: 0px;
+}
