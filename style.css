@@ -257,7 +257,7 @@ h2 {
 }
 
 .item {
-    padding: 13px;
+    padding: 20px;
     border-bottom: 1px solid #e7e7e7;
 }
 
@@ -358,11 +358,10 @@ h2 {
     transition-duration: 0.3s;
     vertical-align: middle;
     float: right;
-    cursor:pointer;
+    cursor: pointer;
     display: inline-block;
     margin-top: 8px;
 }
-
 
 .clear-button:hover {
     color: red;
@@ -515,4 +514,22 @@ li.right {
     width: 100%;
     padding: 5px;
     bottom: 0px;
+}
+
+
+/*Up-Arrow-Button*/
+
+#btnScrollToTop {
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
