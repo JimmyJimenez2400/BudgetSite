@@ -533,3 +533,89 @@ li.right {
     outline: none;
     cursor: pointer;
 }
+@media screen and (min-width:568px){
+    .links{
+      display:block;
+    }
+    #toggle{
+      display:none;
+    }
+    .container{
+      height:120vh;
+      display: grid;
+      grid-template-columns:repeat(8, 1fr);
+      grid-template-rows:repeat(6,1fr);
+      grid-gap:5px;
+      border:solid blue;
+      background-color: yellow;
+      grid-template-areas:
+      "b1 b1 b3 b3 b2 b2 b2 b2"
+      "b1 b1 b3 b3 b2 b2 b2 b2"
+      "b1 b1 b3 b3 b2 b2 b2 b2"
+      "b4 b4 b4 b4 b2 b2 b2 b2"
+      "b4 b4 b4 b4 b2 b2 b2 b2"
+      "b6 b6 b6 b5 b5 b5 b5 b5";
+    }
+    .container > div{
+      border:solid;
+      box-sizing: border-box;
+      text-align:center;
+      color: black;
+    }
+    #box1{
+      grid-area:b1;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-image: url("https://images-na.ssl-images-amazon.com/images/I/714WepcEcNL._AC_SY606_.jpg");
+    }
+     .h3 {
+        color: red;
+      }
+    
+    #box2{
+      grid-area:b2;
+      background-image: url("https://res.cloudinary.com/practicaldev/image/fetch/s--i_sb3chq--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/fk0849hvg2rt13bpqhjy.jpg");
+      text-align:center;
+      position: relative;
+       /* Declared position allows for location changes */
+    }
+    #box3{
+      grid-area:b3;
+      background-image: url("https://images-na.ssl-images-amazon.com/images/I/41fhGB+vbOL._SY344_BO1,204,203,200_.jpg");
+      background-repeat: no-repeat;
+      width: 300px;
+      vertical-align: bottom;
+    }
+    #box2 > img {
+      width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position: relative;
+    }
+    
+    #box3 > img, #box5 > img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position: absolute;
+    vertical-align: bottom;
+   }
+    #box4{
+      grid-area:b4;
+      background-image: url("https://lh3.googleusercontent.com/proxy/ZZA8u1VcIXG6yqFMlqvwSxOVu1Scfq559VNLhUDORhonZi70gUSQcHxecXkmBdno7N4kue7kF6Qd16Tb-15fmc-3-DGqyMrtFcQ1uzlpsZ-nKc4EIoiPkVwGY09z7ps_LWxsccBdBQyIwiuQWeGq");
+      background-repeat: no-repeat;
+      background-position: center 5px;
+    }
+    #box5{
+      grid-area:b5;
+    }
+    #box6{
+      grid-area:b6;
+    }
+   }
+   main {
+    color: blue;
+    text-align: center;
+    background-color: yellow;
+    font-family: 'Kalam', cursive;
+  }
