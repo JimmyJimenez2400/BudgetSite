@@ -18,7 +18,7 @@
 header {
     width: 100%;
     height: 100vh;
-    background: url(https://bit.ly/38EhJYw) no-repeat 50% 50%;
+    background: url(https://images.unsplash.com/photo-1524673450801-b5aa9b621b76?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80) no-repeat 50% 50%;
     background-size: cover;
 }
 
@@ -58,6 +58,9 @@ body {
     background-image: transparent;
     background-size: cover;
     background-position: center;
+    /*This is for the section for Available budget*/
+    background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+    background-color: rgba(95, 71, 181, 0.187);
     position: relative;
 }
 
@@ -70,7 +73,7 @@ body {
     left: 50%;
     /* moves container budget left by certain percentage*/
     transform: translate(-50%, -50%);
-    color: #998477;
+    color: #ffffff;
 }
 
 .budget__title {
@@ -98,18 +101,18 @@ body {
 .budget__income {
     margin-bottom: 10px;
     /* changes space in between red/green bars*/
-    background-color: lightseagreen;
+    background-image: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
 }
 
 .budget__expenses {
-    background-color: lightcoral;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
 }
 
 .budget__income--text,
 .budget__expenses--text {
     float: left;
     font-size: 18px;
-    color: grey;
+    color: rgb(255, 255, 255);
     margin-top: -12px;
     /* moves text up/down */
 }
