@@ -665,14 +665,18 @@ li.right {
         vertical-align: bottom;
     }
     #box4 {
+        text-align: center;
+       
         grid-area: b4;
         background-image: url("https://lh3.googleusercontent.com/proxy/ZZA8u1VcIXG6yqFMlqvwSxOVu1Scfq559VNLhUDORhonZi70gUSQcHxecXkmBdno7N4kue7kF6Qd16Tb-15fmc-3-DGqyMrtFcQ1uzlpsZ-nKc4EIoiPkVwGY09z7ps_LWxsccBdBQyIwiuQWeGq");
         background-repeat: no-repeat;
-        background-position: center 5px;
+        background-position: center 5px; 
     }
-    #box5 {
+
+
+/*     #box5 {
         grid-area: b5;
-    }
+    } */
     #box6 {
         grid-area: b6;
     }
@@ -680,7 +684,7 @@ li.right {
 
 main {
     color: blue;
-    text-align: center;
+    /* text-align: center; */
     background-color: yellow;
     font-family: 'Kalam', cursive;
 }
