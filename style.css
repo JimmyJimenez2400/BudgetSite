@@ -59,7 +59,7 @@ body {
     background-size: cover;
     background-position: center;
     /*This is for the section for Available budget*/
-    background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+    background-image: linear-gradient(to top, #e7e7e7 0%,  #a1c4fd 100%);
     background-color: rgba(95, 71, 181, 0.187);
     position: relative;
 }
@@ -101,7 +101,9 @@ body {
 .budget__income {
     margin-bottom: 10px;
     /* changes space in between red/green bars*/
-    background-image: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    
+
 }
 
 .budget__expenses {
@@ -152,7 +154,8 @@ body {
 
 .add {
     padding: 14px;
-    border-bottom: 1px solid #e7e7e7;
+    border-bottom: 1px solid #a1c4fd;
+    border-top:  1px solid #a1c4fd;
     background-color: #f7f7f7;
 }
 
@@ -198,7 +201,7 @@ body {
     font-size: 35px;
     background: none;
     border: none;
-    color: #28b9b5;
+    color: #a1c4fd;
     cursor: pointer;
     display: inline-block;
     vertical-align: middle;
@@ -214,7 +217,7 @@ body {
 .add__description:focus,
 .add__value:focus {
     outline: none;
-    border: 1px solid #28b9b5;
+    border:  1px solid #a1c4fd;
 }
 
 .add__btn:focus {
@@ -248,7 +251,7 @@ h2 {
 }
 
 .icome__title {
-    color: #28b9b5;
+    color: #a1c4fd5;
 }
 
 .expenses__title {
