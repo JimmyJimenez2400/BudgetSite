@@ -359,7 +359,7 @@ h2 {
 }
 
 .clear-button:hover {
-    background-color: #888888;
+    background-color: red;
     color: white;
 }
 
