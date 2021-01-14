@@ -1,4 +1,4 @@
-/*function generatePieGraph(t, e) {! function() { var t = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+ function generatePieGraph(t, e) {! function() { var t = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
         window.requestAnimationFrame = t }(); var o, i, n = e.hasOwnProperty("pie") ? e.pie : "normal",
         r = e.values,
         a = e.colors,
