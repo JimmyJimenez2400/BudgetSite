@@ -415,7 +415,7 @@ h2 {
     color: #000000;
     transition-duration: 0.3s;
     vertical-align: middle;
-    
+    /* float: right; causes a compilation error for css */
     cursor: pointer;
     display: inline-block;
     margin-top: 8px;
@@ -553,10 +553,12 @@ ul.no_bullets {
 
 li.left {
     float: left;
+    padding: 0px;
 }
 
 li.right {
     float: right;
+    padding: 0px;
 }
 
 
@@ -567,10 +569,10 @@ li.right {
     float: center;
 } */
 
-.footer-message {
+.Footer {
     position: relative;
     width: 100%;
-    padding: 5px;
+    padding: 20px;
     bottom: 0px;
 }
 
