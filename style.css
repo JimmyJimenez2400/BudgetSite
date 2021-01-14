@@ -375,7 +375,7 @@ h2 {
 .content {
     width: 94%;
     margin: 4em auto;
-    font-size: 64px;
+    font-size: 50px;
     line-height: 30px;
     text-align: justify;
 }
@@ -385,9 +385,9 @@ h2 {
     position: fixed;
     float: left;
     margin: 16px 46px;
-    color: #99777f;
+    color: #e7e7e7;
     font-weight: bold;
-    font-size: 64px;
+    font-size: 45px;
     letter-spacing: 2px;
 }
 
