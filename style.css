@@ -415,7 +415,7 @@ h2 {
     color: #000000;
     transition-duration: 0.3s;
     vertical-align: middle;
-    float: right;
+    /* float: right; causes a compilation error for css */
     cursor: pointer;
     display: inline-block;
     margin-top: 8px;
