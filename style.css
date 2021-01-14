@@ -69,7 +69,7 @@ body.dark {
     margin: 0;
     padding: 0;
     width: 100%;
-    
+
 }
  */
 
@@ -600,27 +600,34 @@ li.right {
     #toggle {
         display: none;
     }
-    .container {
-        height: 120vh;
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        grid-gap: 5px;
-        /*border:solid blue;
+    .container{
+      height:120vh;
+      display: grid;
+      grid-template-columns:repeat(8, 1fr);
+      grid-template-rows:repeat(6,1fr);
+      grid-gap:5px;
+      /*border:solid blue;
       /* background-color: yellow; */
-        grid-template-areas: "b1 b1 b3 b3 b2 b2 b2 b2" "b1 b1 b3 b3 b2 b2 b2 b2" "b1 b1 b3 b3 b2 b2 b2 b2" "b4 b4 b4 b4 b2 b2 b2 b2" "b4 b4 b4 b4 b2 b2 b2 b2" "b6 b6 b6 b5 b5 b5 b5 b5";
+      grid-template-areas:
+      "b1 b1 b3 b3 b3 b2 b2 b2"
+      "b1 b1 b3 b3 b3 b2 b2 b2"
+      "b1 b1 b3 b3 b3 b2 b2 b2"
+      "b4 b4 b4 b4 b4 b2 b2 b2"
+      "b4 b4 b4 b4 b4 b2 b2 b2"
+      "b6 b6 b6 b5 b5 b5 b5 b5";
     }
-    .container>div {
-        border: solid 1px;
-        border-left: thistle;
-        border-bottom: thistle;
-        border-top: thistle;
-        border-left: thistle;
-        box-sizing: border-box;
-        text-align: center;
-        color: #a1c4fd;
+    .container > div{
+       border:solid 1px;
+      border-left: thistle;
+      border-bottom: thistle;
+      border-top: thistle;
+      border-left: thistle;
+      box-sizing: border-box;
+      text-align: center;
+      color: #a1c4fd;
     }
     #box1 {
+      color: black;
         grid-area: b1;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -630,47 +637,55 @@ li.right {
         color: red;
     }
     #box2 {
+      color: black;
         grid-area: b2;
         background-image: url("https://res.cloudinary.com/practicaldev/image/fetch/s--i_sb3chq--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/fk0849hvg2rt13bpqhjy.jpg");
         text-align: center;
         position: relative;
         /* Declared position allows for location changes */
     }
-    #box3 {
-        grid-area: b3;
-        background-image: url("https://images-na.ssl-images-amazon.com/images/I/41fhGB+vbOL._SY344_BO1,204,203,200_.jpg");
-        background-repeat: no-repeat;
-        width: 300px;
-        vertical-align: bottom;
+    #box3{
+      color: black;
+      grid-area:b3;
+      background-image: url("https://images-na.ssl-images-amazon.com/images/I/818KRrorFEL.jpg");
+      background-repeat: no-repeat;
+      background-size: 380px;
+      /* width: 300px; */
     }
-    #box2>img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: relative;
+    #box2 > img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position: relative;
     }
-    #box3>img,
-    #box5>img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: absolute;
-        vertical-align: bottom;
+
+    #box3 > img {
+        max-width: 50%;
+        height: auto;
     }
+
+    /* #box3 > img, #box5 > img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position: absolute;
+    vertical-align: bottom;
+   } */
+
     #box4 {
-        text-align: center;
-       
+      color: black;
         grid-area: b4;
-        background-image: url("https://lh3.googleusercontent.com/proxy/ZZA8u1VcIXG6yqFMlqvwSxOVu1Scfq559VNLhUDORhonZi70gUSQcHxecXkmBdno7N4kue7kF6Qd16Tb-15fmc-3-DGqyMrtFcQ1uzlpsZ-nKc4EIoiPkVwGY09z7ps_LWxsccBdBQyIwiuQWeGq");
+        background-image: url("https://www.moneyunder30.com/wp-content/uploads/2017/06/Erase_student_loan-648x364-c-default.jpg");
         background-repeat: no-repeat;
-        background-position: center 5px; 
+        background-position: center 5px;
     }
-    /* #box5 { 
+    /* #box5 {
         grid-area: b5;
-    } */
+    }
     #box6 {
         grid-area: b6;
-    }
+    }*/
+
 }
 
 main {
@@ -680,7 +695,10 @@ main {
     font-family: 'Kalam', cursive;
 }
 
-*Up-Arrow-Button*/ #btnScrollToTop {
+
+/*Up-Arrow-Button*/
+
+#btnScrollToTop {
     position: absolute;
     top: 1515px;
     right: 10px;
@@ -698,4 +716,141 @@ main {
 
 #btnScrollToTop:active {
     background: linear-gradient(to top, #1d7b7b 0%, #0f021e 100%);
+}
+
+body {
+    background-color: #D1F3E7;
+}
+
+#title-Tag-Line {
+    font-size: 20px;
+}
+
+
+/* .card-item__bg{
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  display: block;
+  position: relative;
+  margin: 30px auto;
+  transform: translate(0px, 50px);
+  z-index: 5;
+} */
+
+
+/* form animation starts */
+
+.form {
+    background: #fff;
+    box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+    border-radius: 5px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    border-top: 5px solid #0E3721;
+    /*   z-index: 1; */
+    animation: bounce 1.5s infinite;
+}
+
+ ::-webkit-input-placeholder {
+    font-size: 1.3em;
+}
+
+.title {
+    display: block;
+    font-family: sans-serif;
+    margin: 10px auto 5px;
+    width: 300px;
+}
+
+.termsConditions {
+    margin: 0 auto 5px 80px;
+}
+
+.pageTitle {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.secondaryTitle {
+    color: grey;
+}
+
+.name {
+    background-color: #EBEBEB;
+    color: white;
+}
+
+.name:hover {
+    border-bottom: 5px solid #0E3721;
+    height: 30px;
+    width: 380px;
+    transition: ease 0.5s;
+}
+
+.email {
+    background-color: #EBEBEB;
+    height: 2em;
+}
+
+.email:hover {
+    border-bottom: 5px solid #0E3721;
+    height: 30px;
+    width: 380px;
+    transition: ease 0.5s;
+}
+
+.message {
+    background-color: #EBEBEB;
+    overflow: hidden;
+    height: 10rem;
+}
+
+.message:hover {
+    border-bottom: 5px solid #0E3721;
+    height: 12em;
+    width: 380px;
+    transition: ease 0.5s;
+}
+
+.formEntry {
+    display: block;
+    margin: 30px auto;
+    min-width: 300px;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    transition: all 0.5s ease 0s;
+}
+
+.submit {
+    width: 200px;
+    color: white;
+    background-color: #0E3721;
+    font-size: 20px;
+}
+
+.submit:hover {
+    box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+    transform: translateY(-3px);
+    width: 300px;
+    border-top: 5px solid #0E3750;
+    border-radius: 0%;
+}
+
+@keyframes bounce {
+    0% {
+        tranform: translate(0, 4px);
+    }
+    50% {
+        transform: translate(0, 8px);
+    }
 }
