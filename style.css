@@ -599,21 +599,31 @@ li.right {
     #toggle {
         display: none;
     }
-    .container {
-        height: 120vh;
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        grid-gap: 5px;
-        border: solid blue;
-        background-color: yellow;
-        grid-template-areas: "b1 b1 b3 b3 b2 b2 b2 b2" "b1 b1 b3 b3 b2 b2 b2 b2" "b1 b1 b3 b3 b2 b2 b2 b2" "b4 b4 b4 b4 b2 b2 b2 b2" "b4 b4 b4 b4 b2 b2 b2 b2" "b6 b6 b6 b5 b5 b5 b5 b5";
+    .container{
+      height:120vh;
+      display: grid;
+      grid-template-columns:repeat(8, 1fr);
+      grid-template-rows:repeat(6,1fr);
+      grid-gap:5px;
+      /*border:solid blue;
+      /* background-color: yellow; */
+      grid-template-areas:
+      "b1 b1 b3 b3 b2 b2 b2 b2"
+      "b1 b1 b3 b3 b2 b2 b2 b2"
+      "b1 b1 b3 b3 b2 b2 b2 b2"
+      "b4 b4 b4 b4 b2 b2 b2 b2"
+      "b4 b4 b4 b4 b2 b2 b2 b2"
+      "b6 b6 b6 b5 b5 b5 b5 b5";
     }
-    .container>div {
-        border: solid;
-        box-sizing: border-box;
-        text-align: center;
-        color: black;
+    .container > div{
+       border:solid 1px; 
+      border-left: thistle;
+      border-bottom: thistle; 
+      border-top: thistle; 
+      border-left: thistle;
+      box-sizing: border-box;
+      text-align: center;
+      color: #a1c4fd;
     }
     #box1 {
         grid-area: b1;
