@@ -11,6 +11,9 @@
     <link rel="icon" href="https://image.flaticon.com/icons/png/512/781/781831.png">
     <!-- original code links -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css" />
+    <!--Up-arrow-key-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
     <!-- NavBar links -->
@@ -36,15 +39,24 @@
     <div class="wrapper">
         <header>
             <nav>
+                <div>
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                         <i class="fas fa-moon"></i>
+                         <i class="fas fa-sun"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+
                 <div class="menu-icon">
                     <i class="fa fa-bars fa-2x"></i>
                 </div>
                 <div class="logo">
-                  <img src = "https://image.flaticon.com/icons/png/512/781/781831.png" width="40" height="50">Budget Me!</img>
+                    <img src="https://image.flaticon.com/icons/png/512/781/781831.png" width="40" height="50">Budget Me!</img>
                 </div>
                 <div class="menu">
                     <ul>
-      
+
                         <li><a href="#">About</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
@@ -86,18 +98,18 @@
           <option value="inc" selected>+</option>
           <option value="exp">-</option>
         </select>
-            <!-- Add description -->
-            <input type="text" class="add__description" placeholder="Add description" />
-            <!-- Add value -->
-            <input type="number" step="50" class="add__value" placeholder="Value" />
+                    <!-- Add description -->
+                    <input type="text" class="add__description" placeholder="Add description" />
+                    <!-- Add value -->
+                    <input type="number" step="50" class="add__value" placeholder="Value" />
 
-            <button class="add__btn">
+                    <button class="add__btn">
                 <i class="ion-ios-checkmark-outline"></i>
             </button>
-            <button onclick="clearEverything()" class="clear-button">
+                    <button onclick="clearEverything()" class="clear-button">
                 <ion-icon name="trash-outline"></ion-icon>
             </button>
-            </div>
+                </div>
 
             </div>
 
@@ -120,7 +132,7 @@
             </div>
 
 
-            
+
         </div>
 
         <br></br><br></br><br></br>
@@ -192,32 +204,65 @@
         <script src="app.js"></script>
         <!-- has to stay at bottom in order for add description and value to work -->
         <div class="container" id="projects">
-            <div id="box1"><h3>Do your taxes with our sponsors!</h3></div>
-            <div id="box2"><a id="profile-link" href="https://teeteringcarabiner.github.io/Walker_Daniel_ttp_static/" target="_blank"><br><h3>Visit our new Github!</h3></a></div>
-            <div id="box3" class="project-tile"><h3>Check out this popular<br>personal finance book!</h3></div>
-            <div id="box4"><h3>My Goal</h3><br><h5>Lobby congress to void $50k of college loans!</div>
-            <div id="box5" class="project"><h3>Help out those in need!</h3><ul>
-    <li>Volunteer</li>
-    <li>Learn to cook</li>
-    <li>Develop positive habits</li>
-    <li>Learn SQL</li>
-    <li>Be a linux guru</li>
-    </ul> </div>
-            <div id="box6">The creators of this page are students in NYC.
-              <br><br>This is the best page. Team 4 wins: No further analysis necessary!
+            <div id="box1">
+                <h3>Do your taxes with our sponsors!</h3>
             </div>
-          </div>
-          <footer id="footer">
+            <div id="box2">
+                <a id="profile-link" href="https://teeteringcarabiner.github.io/Walker_Daniel_ttp_static/" target="_blank"><br>
+                    <h3>Visit our new Github!</h3>
+                </a>
+            </div>
+            <div id="box3" class="project-tile">
+                <h3>Check out this popular<br>personal finance book!</h3>
+            </div>
+            <div id="box4">
+                <h3>My Goal</h3><br>
+                <h5>Lobby congress to void $50k of college loans!</div>
+            <div id="box5" class="project">
+                <h3>Help out those in need!</h3>
+                <ul>
+                    <li>Volunteer</li>
+                    <li>Learn to cook</li>
+                    <li>Develop positive habits</li>
+                    <li>Learn SQL</li>
+                    <li>Be a linux guru</li>
+                </ul>
+            </div>
+            <div id="box6">The creators of this page are students in NYC.
+                <br><br>This is the best page. Team 4 wins: No further analysis necessary!
+            </div>
+        </div>
+        <footer id="footer">
             <h3>Find us on the web</h3>
             <p>
-              <a href="#top">Jump to the top</a>
+                <a href="#top">Jump to the top</a>
             </p>
             <section>
                 <h2>Link to Survey</h2>
                 <p>Did you find this budget tool to be useful? Fill out my survey form <a href="survey.html">here.</a></p>
-              </section>
+            </section>
             <p>&copy TTP Team 4 2021</p>
-          </footer>
+        </footer>
+
+        <button id="btnScrollToTop">
+        <i class="material-icons">arrow_upward</i>
+    </button>
+        <!--Pratice of internal and external styling-->
+        <script>
+            const btnScrollToTop = document.querySelector("#btnScrollToTop");
+
+            btnScrollToTop.addEventListener("click", function() {
+                //window.scrollTo(0, 0);
+
+                window.scrollTo({ //Smooth animation for up-arrow
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth"
+                })
+
+            });
+        </script>
+
 </body>
 
 </html>
