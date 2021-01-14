@@ -39,14 +39,14 @@
     <div class="wrapper">
         <header>
             <nav>
-                <div>
+                <!-- <div>
                     <input type="checkbox" class="checkbox" id="chk" />
                     <label class="label" for="chk">
                          <i class="fas fa-moon"></i>
                          <i class="fas fa-sun"></i>
                         <div class="ball"></div>
                     </label>
-                </div>
+                </div> -->
 
                 <div class="menu-icon">
                     <i class="fa fa-bars fa-2x"></i>
@@ -94,10 +94,21 @@
         <div class="bottom">
             <div class="add">
                 <div class="add__container">
+                    
+                    <span>
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                         <i class="fas fa-moon"></i>
+                         <i class="fas fa-sun"></i>
+                        <div class="ball"></div>
+                    </label>
+                    </span>
+                    
+                    
                     <select class="add__type">
-          <option value="inc" selected>+</option>
-          <option value="exp">-</option>
-        </select>
+                    <option value="inc" selected>+</option>
+                    <option value="exp">-</option>
+                     </select>
                     <!-- Add description -->
                     <input type="text" class="add__description" placeholder="Add description" />
                     <!-- Add value -->
@@ -106,7 +117,9 @@
                     <button class="add__btn">
                 <i class="ion-ios-checkmark-outline"></i>
             </button>
+
                     <button onclick="clearEverything()" class="clear-button" style ="float:right">
+
                 <ion-icon name="trash-outline"></ion-icon>
             </button>
                 </div>
@@ -231,7 +244,7 @@
                 <div class="Footer">
                     <ul class="no_bullets">
                         <center>
-                            <li class="center"><a href = "https://github.com/holysmokes48/BudgetSite">Check out our Github Page!</a></li>
+                            <li class="center"><a href = "https://github.com/JimmyJimenez2400/BudgetSite/tree/main">Check out our Github Page!</a></li>
                         </center>
                         <hr>
                         <li class="left">Created by JJAY TTP Team 4</li>
@@ -246,8 +259,9 @@
                 <a href="#top">Jump to the top</a>
             </li>
             <section>
-                <h2>Link to Survey</h2>
-                <p>Did you find this budget tool to be useful? Fill out my survey form <a href="survey.html">here.</a></p>
+                <li><h2>Link to Survey</h2></li>
+                
+                <li>Did you find this budget tool to be useful? Fill out my survey form <a href="survey.html">here.</a></li>
             </section>
            <!--  <p>&copy TTP Team 4 2021</p> -->
         </ul>

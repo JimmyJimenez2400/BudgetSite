@@ -23,7 +23,7 @@ body.dark {
 
 .checkbox {
     opacity: 0;
-    position: absolute;
+    /* position: absolute; */
 }
 
 .label {
@@ -41,7 +41,7 @@ body.dark {
 }
 
 .label .ball {
-    background-color: #fff;
+    background-color: rgb(255, 249, 249);
     border-radius: 50%;
     position: fixed;
     top: 2px;
@@ -117,8 +117,7 @@ body {
     background-size: cover;
     background-position: center;
     /*This is for the section for Available budget*/
-    background-image: linear-gradient(to top, #e7e7e7 0%, #a1c4fd 100%);
-    background-color: rgba(95, 71, 181, 0.187);
+    background-color: rgba(#e7e7e7, #a1c4fd);
     position: relative;
 }
 
@@ -601,31 +600,25 @@ li.right {
     #toggle {
         display: none;
     }
-    .container{
-      height:120vh;
-      display: grid;
-      grid-template-columns:repeat(8, 1fr);
-      grid-template-rows:repeat(6,1fr);
-      grid-gap:5px;
-      /*border:solid blue;
+    .container {
+        height: 120vh;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 5px;
+        /*border:solid blue;
       /* background-color: yellow; */
-      grid-template-areas:
-      "b1 b1 b3 b3 b2 b2 b2 b2"
-      "b1 b1 b3 b3 b2 b2 b2 b2"
-      "b1 b1 b3 b3 b2 b2 b2 b2"
-      "b4 b4 b4 b4 b2 b2 b2 b2"
-      "b4 b4 b4 b4 b2 b2 b2 b2"
-      "b6 b6 b6 b5 b5 b5 b5 b5";
+        grid-template-areas: "b1 b1 b3 b3 b2 b2 b2 b2" "b1 b1 b3 b3 b2 b2 b2 b2" "b1 b1 b3 b3 b2 b2 b2 b2" "b4 b4 b4 b4 b2 b2 b2 b2" "b4 b4 b4 b4 b2 b2 b2 b2" "b6 b6 b6 b5 b5 b5 b5 b5";
     }
-    .container > div{
-       border:solid 1px; 
-      border-left: thistle;
-      border-bottom: thistle; 
-      border-top: thistle; 
-      border-left: thistle;
-      box-sizing: border-box;
-      text-align: center;
-      color: #a1c4fd;
+    .container>div {
+        border: solid 1px;
+        border-left: thistle;
+        border-bottom: thistle;
+        border-top: thistle;
+        border-left: thistle;
+        box-sizing: border-box;
+        text-align: center;
+        color: #a1c4fd;
     }
     #box1 {
         grid-area: b1;
@@ -672,9 +665,7 @@ li.right {
         background-repeat: no-repeat;
         background-position: center 5px; 
     }
-
-
-/*     #box5 {
+    /* #box5 { 
         grid-area: b5;
     } */
     #box6 {
@@ -683,9 +674,9 @@ li.right {
 }
 
 main {
-    color: blue;
-    /* text-align: center; */
-    background-color: yellow;
+    color: #000000;
+    text-align: center;
+    background-color: #a1c4fd;
     font-family: 'Kalam', cursive;
 }
 
