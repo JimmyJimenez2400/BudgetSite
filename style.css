@@ -668,18 +668,18 @@ li.right {
         background-repeat: no-repeat;
         background-position: center 5px;
     }
-    #box5 {
+    /* #box5 { 
         grid-area: b5;
     }
     #box6 {
         grid-area: b6;
-    }
+    }*/
 }
 
 main {
-    color: blue;
+    color:#000000;
     text-align: center;
-    background-color: yellow;
+    background-color: #a1c4fd;
     font-family: 'Kalam', cursive;
 }
 
