@@ -17,7 +17,7 @@
 
 header {
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     background: url(https://images.unsplash.com/photo-1524673450801-b5aa9b621b76?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80) no-repeat 50% 50%;
     background-size: cover;
 }
@@ -59,7 +59,7 @@ body {
     background-size: cover;
     background-position: center;
     /*This is for the section for Available budget*/
-    background-image: linear-gradient(to top, #e7e7e7 0%,  #a1c4fd 100%);
+    background-image: linear-gradient(to top, #e7e7e7 0%, #a1c4fd 100%);
     background-color: rgba(95, 71, 181, 0.187);
     position: relative;
 }
@@ -102,8 +102,6 @@ body {
     margin-bottom: 10px;
     /* changes space in between red/green bars*/
     background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-    
-
 }
 
 .budget__expenses {
@@ -155,7 +153,7 @@ body {
 .add {
     padding: 14px;
     border-bottom: 1px solid #a1c4fd;
-    border-top:  1px solid #a1c4fd;
+    border-top: 1px solid #a1c4fd;
     background-color: #f7f7f7;
 }
 
@@ -217,7 +215,7 @@ body {
 .add__description:focus,
 .add__value:focus {
     outline: none;
-    border:  1px solid #a1c4fd;
+    border: 1px solid #a1c4fd;
 }
 
 .add__btn:focus {
@@ -251,7 +249,7 @@ h2 {
 }
 
 .icome__title {
-    color: #a1c4fd5;
+    color: #a1c4fd;
 }
 
 .expenses__title {
