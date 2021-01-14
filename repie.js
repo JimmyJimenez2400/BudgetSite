@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 function generatePieGraph(t, e) {! function() { var t = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+=======
+ function generatePieGraph(t, e) {! function() { var t = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+>>>>>>> ac9971c63e3e10d0caec9dcc2d3ed9882998d140
         window.requestAnimationFrame = t }(); var o, i, n = e.hasOwnProperty("pie") ? e.pie : "normal",
         r = e.values,
         a = e.colors,
