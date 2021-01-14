@@ -11,14 +11,11 @@
     <link rel="icon" href="https://image.flaticon.com/icons/png/512/781/781831.png">
     <!-- original code links -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css" />
-    <!--Up-arrow-key-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
     <!-- NavBar links -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
-
 
     <link type="text/css" rel="stylesheet" href="style.css" />
 
@@ -43,11 +40,11 @@
                     <i class="fa fa-bars fa-2x"></i>
                 </div>
                 <div class="logo">
-                    <img src="https://image.flaticon.com/icons/png/512/781/781831.png" width="40" height="50">Budget Me!</img>
+                  <img src = "https://image.flaticon.com/icons/png/512/781/781831.png" width="40" height="50">Budget Me!</img>
                 </div>
                 <div class="menu">
                     <ul>
-
+      
                         <li><a href="#">About</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
@@ -89,18 +86,18 @@
           <option value="inc" selected>+</option>
           <option value="exp">-</option>
         </select>
-                    <!-- Add description -->
-                    <input type="text" class="add__description" placeholder="Add description" />
-                    <!-- Add value -->
-                    <input type="number" step="50" class="add__value" placeholder="Value" />
+            <!-- Add description -->
+            <input type="text" class="add__description" placeholder="Add description" />
+            <!-- Add value -->
+            <input type="number" step="50" class="add__value" placeholder="Value" />
 
-                    <button class="add__btn">
+            <button class="add__btn">
                 <i class="ion-ios-checkmark-outline"></i>
             </button>
-                    <button onclick="clearEverything()" class="clear-button">
+            <button onclick="clearEverything()" class="clear-button">
                 <ion-icon name="trash-outline"></ion-icon>
             </button>
-                </div>
+            </div>
 
             </div>
 
@@ -123,7 +120,7 @@
             </div>
 
 
-
+            
         </div>
 
         <br></br><br></br><br></br>
@@ -180,34 +177,13 @@
         <div class="Footer">
             <ul class="no_bullets">
                 <center>
-                    <li class="center">Check out our Github Page!</li>
+                    <a<li class="center">Check out our Github Page!</li>
                 </center>
                 <hr>
                 <li class="left">Created by JJAY TTP Team 4</li>
                 <li class="right">Copyright 2021</li>
             </ul>
         </div>
-
-        <button id="btnScrollToTop">
-        <i class="material-icons">arrow_upward</i>
-    </button>
-        <!--Pratice of internal and external styling-->
-        <script>
-            const btnScrollToTop = document.querySelector("#btnScrollToTop");
-
-            btnScrollToTop.addEventListener("click", function() {
-                //window.scrollTo(0, 0);
-
-                window.scrollTo({ //Smooth animation for up-arrow
-                    top: 0,
-                    left: 0,
-                    behavior: "smooth"
-                })
-
-            });
-        </script>
-
-
 
         <!-- For ionics icon -->
         <!-- from: https://ionicons.com/usage/#trash-outline -->
