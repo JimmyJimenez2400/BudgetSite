@@ -23,7 +23,7 @@ body.dark {
 
 .checkbox {
     opacity: 0;
-    position: absolute;
+    /* position: absolute; */
 }
 
 .label {
@@ -41,7 +41,7 @@ body.dark {
 }
 
 .label .ball {
-    background-color: #fff;
+    background-color: rgb(255, 249, 249);
     border-radius: 50%;
     position: fixed;
     top: 2px;
