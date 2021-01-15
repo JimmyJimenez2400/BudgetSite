@@ -13,7 +13,7 @@ body {
     background-color: #fafafa;
     display: flexbox;
     height: 100vh;
-    margin: 0;
+    margin: 10;
     transition: background 0.2s linear;
 }
 
@@ -125,7 +125,7 @@ body {
     position: absolute;
     width: 350px;
     /* changes length of red/green bars*/
-    top: 50%;
+    top: 35%;
     /* shifts budget box up/down */
     left: 50%;
     /* moves container budget left by certain percentage*/
