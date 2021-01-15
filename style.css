@@ -678,6 +678,10 @@ li.right {
         grid-area: b6;
     }*/
 }
+#video {
+  display: block;
+  margin: auto;
+}
 
 main {
     color: #000000;
