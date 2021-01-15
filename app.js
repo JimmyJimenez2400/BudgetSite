@@ -534,3 +534,16 @@ $(window).on("scroll", function() {
         $('nav').removeClass('black');
     }
 })
+
+
+// Header logo scroll effect addition
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header_menu").style.fontSize = "30px";
+  } else {
+    document.getElementById("header_menu").style.fontSize = "45px";
+  }logo
+}
