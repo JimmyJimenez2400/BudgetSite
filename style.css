@@ -136,7 +136,7 @@ body {
 .budget__title {
     font-size: 22px;
     text-align: center;
-    color: #3fa7d6;
+    color: #ffffff;
     margin-bottom: 10px;
     font-weight: 300;
 }
@@ -627,7 +627,7 @@ li.right {
         background-repeat: no-repeat;
         background-position: bottom;
         background-image: url("https://images-na.ssl-images-amazon.com/images/I/714WepcEcNL._AC_SY606_.jpg");
-        background-size:contain;
+        background-size: contain;
     }
     .h3 {
         color: red;
@@ -638,9 +638,9 @@ li.right {
         background-image: url("https://res.cloudinary.com/practicaldev/image/fetch/s--i_sb3chq--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/fk0849hvg2rt13bpqhjy.jpg");
         text-align: center;
         position: relative;
-        background-size:contain;
-        background-repeat:no-repeat;
-        border:none;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border: none;
         /* Declared position allows for location changes */
     }
     #box3 {
@@ -661,8 +661,6 @@ li.right {
         max-width: 50%;
         height: auto;
     }
-
-    
     #box4 {
         color: black;
         grid-area: b4;
@@ -672,9 +670,13 @@ li.right {
         display: inline-block;
     }
 }
+
+
+/*video attachtement*/
+
 #video {
-  display: block;
-  margin: auto;
+    display: block;
+    margin: auto;
 }
 
 main {
@@ -688,8 +690,8 @@ main {
 /*Up-Arrow-Button*/
 
 #btnScrollToTop {
-    position: absolute;
-    top: 1515px;
+    position: fixed;
+    top: 860px;
     right: 10px;
     bottom: 20px;
     width: 50px;
@@ -730,7 +732,7 @@ body {
 } */
 
 
-/* form animation starts */
+/* form animation starts for contact information */
 
 .form {
     background: #fff;
