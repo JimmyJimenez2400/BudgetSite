@@ -1,90 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Hello!</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="style.css">
-    
+
     <!-- import the webpage's javascript file -->
     <script src="script.js" defer></script>
-  </head>  
-  <body>
-      <main>
+</head>
 
-      
-    <nav id="top">
-      <a href="index.html">Home</a>
-      <a href="survey.html">Survey</a>
-<!--       <a href="#ingredients">Jump to ingredients</a>
-      <a href="#recipe">Jump to recipe</a>
-      <a href="#footer">Links to social media</a> -->
-    </nav>
-    <p><br><br><br><br></p>
-    <h1>Budget survey</h1>
+<body>
     <main>
-      <h2>Please fill out the survey below</h2>
-<!--       form element is a container -->
-      <form action="mailto:xxxx@gmail.com" id="survey-form">
-        <label>Name:</label>
-        <input type="text" placeholder="Please enter your name">
-        <br>
-        <label>Email:</label>
-        <input type="text email" placeholder="Please enter your email">
-        <br>
-        <label>Age:</label>
-        <br>
-        <label>18-24</label>
-        <input type="radio" name="age" value="yes" checked>
-        <br>
-        <label>25-34</label>
-        <input type="radio" name="age" value="no">
-        <br>
-        <label>35-44</label>
-        <input type="radio" name="age" value="no">
-        <br>
-        <label>45-54</label>
-        <input type="radio" name="age" value="no">
-        <br>
-        <label>55-64</label>
-        <input type="radio" name="age" value="no">
-        <br>
-        <label>65+</label>
-        <input type="radio" name="age" value="no">
-        <br>
-        <label>Please select your gender</label>
-        <select>
+
+
+      <div class="wrapper">
+        
+            <nav>
+                <div class="menu-icon">
+                    <i class="fa fa-bars fa-2x"></i>
+                </div>
+                <div class="logo">
+                    <img src="https://image.flaticon.com/icons/png/512/781/781831.png" width="40" height="50">Budget Me!</img>
+                </div>
+                <div class="menu">
+                    <ul>
+
+                        <li><a href="#">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        
+
+        <p><br><br><br><br></p>
+        <h1>Budget survey</h1>
+        <main>
+            <h2>Please fill out the survey below</h2>
+            <!--       form element is a container -->
+            <form action="mailto:xxxx@gmail.com" id="survey-form">
+                <label>Name:</label>
+                <input type="text" placeholder="Please enter your name">
+                <br>
+                <label>Email:</label>
+                <input type="text email" placeholder="Please enter your email">
+                <br>
+                <label>Age:</label>
+                <br>
+                <label>18-24</label>
+                <input type="radio" name="age" value="yes" checked>
+                <br>
+                <label>25-34</label>
+                <input type="radio" name="age" value="no">
+                <br>
+                <label>35-44</label>
+                <input type="radio" name="age" value="no">
+                <br>
+                <label>45-54</label>
+                <input type="radio" name="age" value="no">
+                <br>
+                <label>55-64</label>
+                <input type="radio" name="age" value="no">
+                <br>
+                <label>65+</label>
+                <input type="radio" name="age" value="no">
+                <br>
+                <label>Please select your gender</label>
+                <select>
           <option>Male</option>
           <option>Female</option>
           <option>Prefer not to say</option>
         </select>
-        <br>
-        <label>I found this recipe to be:</label>
-        <br>
-        <label>Useful</label>
-        <input type="checkbox" value="yes" checked>
-        <label>Not useful</label>
-        <input type="checkbox" value="no">
-        <label>Other (please explain below)</label>
-        <input type="checkbox" value="no">
-        <br>
-        <textarea placeholder="Share additional comments and suggestions"></textarea>
-        <br> 
-        <button type="submit">Submit</button>
-      </form>
+                <br>
+                <label>I found this budget app to be:</label>
+                <br>
+                <label>Useful</label>
+                <input type="checkbox" value="yes" checked>
+                <label>Not useful</label>
+                <input type="checkbox" value="no">
+                <label>Other (please explain below)</label>
+                <input type="checkbox" value="no">
+                <br>
+                <textarea placeholder="Share additional comments and suggestions"></textarea>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+        <footer id="footer">
+            <h3>Find us on the web</h3>
+            <nav>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#top">Jump to the top</a>
+            </nav>
+            <p>&copy TTP Team 4 2021</p>
+        </footer>
     </main>
-    <footer id="footer">
-      <h3>Find us on the web</h3>
-      <nav>
-        <a href="#">Instagram</a>
-        <a href="#">Facebook</a>
-        <a href="#">Twitter</a>
-        <a href="#top">Jump to the top</a>
-      </nav>
-      <p>&copy TTP Team 4 2021</p>
-    </footer></main>
-  </body>
+</body>
+
 </html>
